@@ -1,0 +1,30 @@
+@mixin focus-ring {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-md);
+  top: var(--space-md);
+  z-index: 10;
+  transform: translateY(-150%);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-background-accent);
+  color: var(--color-text-inverse);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+
+  &:focus {
+    transform: none;
+    @include focus-ring;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}

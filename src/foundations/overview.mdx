@@ -1,0 +1,11 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Foundations/Overview" />
+
+# Harbor
+
+A small design system for a content site. It is the workflow from the design-systems contract: Figma tokens become CSS, Foundation supplies the grid, and each component is documented, checked for WCAG 2.2 AA, and snapshotted.
+
+Change a value in `tokens/tokens.json`, run `npm run tokens`, and the components on this page follow. Semantic tokens point at primitives with `var()`, so a theme change is a change to the primitive layer.
+
+Foundation is used for the XY grid, the `hide-for-large` utility, and the legacy accordion. Buttons, fields, and disclosures are ours. The accordion story exists to show the gap: Foundation's trigger is a link, and the disclosure next to it is the accessible replacement.

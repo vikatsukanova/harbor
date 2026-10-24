@@ -1,0 +1,9 @@
+node_modules
+storybook-static
+test-results
+playwright-report
+blob-report
+debug-storybook.log
+.env
+.DS_Store
+.cursor/

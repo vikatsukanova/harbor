@@ -1,0 +1,88 @@
+/* Generated from tokens/tokens.json. Run `npm run tokens` after editing tokens. */
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --primitive-color-paper: #f3efe6; /** Page background. */
+  --primitive-color-raised: #fffcf7; /** Cards and inputs, one step above the page. */
+  --primitive-color-ink: #1c2824;
+  --primitive-color-muted: #3e4f48;
+  --primitive-color-line: #ddd4c4;
+  --primitive-color-sea: #1d4e89;
+  --primitive-color-sea-hover: #0c332e;
+  --primitive-color-copper: #8d3d12;
+  --primitive-color-danger: #8d221c;
+  --primitive-color-danger-surface: #f8e6e2;
+  --primitive-color-disabled: #e4ddd2;
+  --primitive-color-disabled-text: #6d675f;
+  --primitive-space-4: 4px;
+  --primitive-space-8: 8px;
+  --primitive-space-12: 12px;
+  --primitive-space-16: 16px;
+  --primitive-space-24: 24px;
+  --primitive-space-32: 32px;
+  --primitive-space-48: 48px;
+  --primitive-space-64: 64px;
+  --primitive-space-96: 96px;
+  --primitive-font-family-sans: 'Public Sans', sans-serif;
+  --primitive-font-family-serif: 'Newsreader', Georgia, serif;
+  --primitive-font-size-100: 12px;
+  --primitive-font-size-200: 14px;
+  --primitive-font-size-300: 17px;
+  --primitive-font-size-400: 22px;
+  --primitive-font-size-500: 32px;
+  --primitive-font-size-600: 48px;
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-semibold: 600;
+  --primitive-font-line-tight: 1.2;
+  --primitive-font-line-body: 1.6;
+  --primitive-font-line-ui: 1.4;
+  --primitive-radius-sm: 2px;
+  --primitive-radius-md: 4px;
+  --color-background-page: var(--primitive-color-paper);
+  --color-background-raised: var(--primitive-color-raised);
+  --color-background-accent: var(--primitive-color-sea);
+  --color-background-accent-hover: var(--primitive-color-sea-hover);
+  --color-background-danger: var(--primitive-color-danger-surface);
+  --color-background-disabled: var(--primitive-color-disabled);
+  --color-text-primary: var(--primitive-color-ink);
+  --color-text-muted: var(--primitive-color-muted);
+  --color-text-inverse: var(--primitive-color-raised);
+  --color-text-link: var(--primitive-color-copper);
+  --color-text-danger: var(--primitive-color-danger);
+  --color-text-disabled: var(--primitive-color-disabled-text);
+  --color-border-default: var(--primitive-color-line);
+  --color-border-focus: var(--primitive-color-sea);
+  --color-border-accent: var(--primitive-color-copper);
+  --color-border-danger: var(--primitive-color-danger);
+  --space-xs: var(--primitive-space-8);
+  --space-sm: var(--primitive-space-12);
+  --space-md: var(--primitive-space-16);
+  --space-lg: var(--primitive-space-24);
+  --space-xl: var(--primitive-space-32);
+  --space-2xl: var(--primitive-space-48);
+  --space-3xl: var(--primitive-space-64);
+  --font-family-sans: var(--primitive-font-family-sans);
+  --font-family-serif: var(--primitive-font-family-serif);
+  --font-size-eyebrow: var(--primitive-font-size-100);
+  --font-size-small: var(--primitive-font-size-200);
+  --font-size-body: var(--primitive-font-size-300);
+  --font-size-title: var(--primitive-font-size-400);
+  --font-size-heading: var(--primitive-font-size-500);
+  --font-size-display: var(--primitive-font-size-600);
+  --font-weight-regular: var(--primitive-font-weight-regular);
+  --font-weight-medium: var(--primitive-font-weight-medium);
+  --font-weight-semibold: var(--primitive-font-weight-semibold);
+  --font-line-tight: var(--primitive-font-line-tight);
+  --font-line-body: var(--primitive-font-line-body);
+  --font-line-ui: var(--primitive-font-line-ui);
+  --radius-control: var(--primitive-radius-sm);
+  --radius-surface: var(--primitive-radius-md);
+  --button-padding-x: var(--space-lg);
+  --button-padding-y: var(--space-sm);
+  --button-radius: var(--radius-control);
+  --field-padding-x: var(--space-md);
+  --field-radius: var(--radius-control);
+}

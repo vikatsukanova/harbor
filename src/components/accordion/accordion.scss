@@ -1,0 +1,21 @@
+.accordion.accordion--harbor {
+  margin: 0;
+  border: 1px solid var(--color-border-default);
+  background: var(--color-background-raised);
+  font-family: var(--font-family-sans);
+}
+
+.accordion--harbor .accordion-title {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+}
+
+.accordion--harbor .accordion-content {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  line-height: var(--font-line-body);
+}
+
+.accordion--harbor .accordion-item.is-active > .accordion-content {
+  display: block;
+}

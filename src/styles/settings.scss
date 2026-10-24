@@ -1,0 +1,26 @@
+// Foundation reads these when its files are imported. They are compile-time,
+// so anything Foundation runs through a color function has to be a real color.
+// Keep $primary-color aligned with primitive.color.sea in tokens/tokens.json.
+// Components themselves use the generated CSS variables, not these Sass variables.
+
+$primary-color: #11443e;
+$secondary-color: #8d3d12;
+$white: #fffcf7;
+$black: #1c2824;
+$light-gray: #ddd4c4;
+$medium-gray: #3e4f48;
+$dark-gray: #1c2824;
+
+$global-width: 72rem;
+$global-font-size: 100%;
+$body-background: #f3efe6;
+$body-font-color: #1c2824;
+$body-font-family: 'Public Sans', sans-serif;
+$header-font-family: 'Newsreader', Georgia, serif;
+$body-antialiased: true;
+
+$accordion-item-color: $primary-color;
+$accordion-content-color: $body-font-color;
+$accordion-background: $white;
+$accordion-content-background: $white;
+$accordion-content-border: 1px solid $light-gray;

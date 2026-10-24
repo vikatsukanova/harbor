@@ -1,0 +1,40 @@
+{
+  "name": "harbor",
+  "private": true,
+  "type": "module",
+  "description": "Harbor is a small content-site design system: Figma tokens, Foundation, Storybook, accessibility, and visual regression.",
+  "scripts": {
+    "tokens": "node scripts/build-tokens.js",
+    "tokens:check": "node scripts/build-tokens.js --check",
+    "tokens:watch": "node scripts/watch-tokens.js",
+    "figma:pull": "node scripts/pull-figma.js",
+    "test:figma": "node --test scripts/pull-figma.test.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prestorybook": "npm run tokens",
+    "prebuild-storybook": "npm run tokens",
+    "test:a11y": "npm run build-storybook && playwright test tests/a11y.spec.js tests/behavior.spec.js",
+    "test:visual": "npm run build-storybook && playwright test tests/visual.spec.js",
+    "test:visual:update": "npm run build-storybook && playwright test tests/visual.spec.js --update-snapshots",
+    "test": "npm run test:figma && npm run tokens:check && npm run build-storybook && playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@fontsource/newsreader": "^5.3.0",
+    "@fontsource/public-sans": "^5.3.0",
+    "@playwright/test": "^1.64.1",
+    "@storybook/addon-a11y": "^10.6.3",
+    "@storybook/addon-docs": "^10.6.3",
+    "@storybook/html-vite": "^10.6.3",
+    "@tokens-studio/sd-transforms": "^2.0.3",
+    "foundation-sites": "^6.9.0",
+    "http-server": "^14.1.1",
+    "jquery": "^3.7.1",
+    "motion-ui": "^2.0.8",
+    "sass": "^1.77.8",
+    "storybook": "^10.6.3",
+    "style-dictionary": "^5.7.1",
+    "vite": "^8.3.5",
+    "what-input": "^5.2.12"
+  }
+}

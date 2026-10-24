@@ -1,0 +1,34 @@
+// Load order matters:
+// 1. Generated tokens, so var(--color-text-primary) exists.
+// 2. Sass settings, before Foundation reads them.
+// 3. Foundation itself, then only the pieces this system uses.
+// 4. Our components, which replace Foundation's button, forms, and accordion.
+
+@import 'tokens';
+@import 'settings';
+@import 'foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-visibility-classes;
+@include foundation-accordion;
+
+body {
+  margin: 0;
+  background: var(--color-background-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-body);
+}
+
+@import 'focus';
+@import '../components/button/button';
+@import '../components/field/field';
+@import '../components/card/card';
+@import '../components/section-header/section-header';
+@import '../components/disclosure/disclosure';
+@import '../components/site-header/site-header';
+@import '../components/accordion/accordion';
+@import '../patterns/article/article';
+@import '../foundations/foundations';
